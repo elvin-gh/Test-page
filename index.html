@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Basic Webpage</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="Base button styling.css">
+</head>
+<body>
+<style>/* General styles */
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+        background-color: #f4f4f9;
+        color: #333;
+    }
+    
+    header {
+        text-align: center;
+        padding: 10px;
+        background-color: #080809;
+        color: #fff;
+    }
+    
+    nav {
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #007BFF;
+    }
+    
+    main {
+        margin: 20px auto;
+        text-align: center;
+        max-width: 800px;
+        padding: 20px;
+        background: #FFF;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.9em;
+        color: #666;
+    }
+    
+    /* Button styling */
+    .contact-button {
+        display: inline-block;
+        background-color: red;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-decoration: none;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    /* Strobe effect */
+    .contact-button:hover {
+        animation: strobe 0.2s infinite;
+    }
+    
+    @keyframes strobe {
+        0%, 100% {
+            background-color: blue;
+        }
+        50% {
+            background-color: rgb(236, 7, 7);
+        }
+    }
+    
+    /* Button container styling */
+    .button-container {
+        display: flex;
+        justify-content: space-around; /* Equal spacing between buttons */
+        margin-top: 20px;
+    }
+    
+    /* Optional image styling */
+    img {
+        display: block;
+        margin: 0 auto; /* Center image */
+        max-width: 100%; /* Responsive scaling */
+        height: auto;
+    }
+    </style>
+<header>
+    <h1>Test, test this is a test</h1>
+    <p>How about a little subtitle here?</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+    <h2 id="about">Typing code</h2>
+    <p>What a fun way to type code! All these weird-ass text columns behind the scenes are so pretty from the outside!</p>
+
+    <h2 id="services">Services</h2>
+    <p>I can type code for you, if your request is very simple and basic at least.</p>
+    
+    <h2 id="images">Meet the team!</h2>
+    <img src="https://miro.medium.com/v2/resize:fit:964/0*JtrE4wwY5SDpVgk6." alt="random image" width="600" height="400">
+
+    <!-- Contact Me Buttons -->
+    <div class="button-container">
+        <a href="mailto:basic.coding@basic-code.org" class="contact-button">Contact Me 👹</a>
+        <a href="mailto:basic.coding@basic-code.org" class="contact-button">Contact Me 👹</a>
+        <a href="mailto:basic.coding@basic-code.org" class="contact-button">Contact Me 👹</a>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; Internet 2024</p>
+</footer>
+
+</body>
+</html>
